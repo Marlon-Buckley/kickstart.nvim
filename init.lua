@@ -253,6 +253,12 @@ vim.o.clipboard = 'unnamedplus'
 -- Enable break indent
 vim.o.breakindent = true
 
+-- Set point at which file begins to scroll
+vim.o.scrolloff = 8;
+
+-- Enable relative line numbers
+vim.o.relativenumber = true;
+
 -- Save undo history
 vim.o.undofile = true
 
@@ -515,7 +521,7 @@ local servers = {
   -- gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
-  -- tsserver = {},
+  tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
 
   lua_ls = {
